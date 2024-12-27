@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nunjucks/3.2.4/nunjucks.min.js"></script>
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- navbar with one heading and two buttons -->
+    <nav class="navbar">
+      <h1 class="navbar-brand">Newsletter of the Week</h1>
+
+      <div class="navbar-buttons">
+        <button title="Download sample text file" id="sample">
+          &#8681; Sample
+        </button>
+        <button title="Upload text file" id="upload">&#8682; File</button>
+        <button title="Download html file" id="downloadHtml">&#8681; HTML</button>
+      </div>
+    </nav>
+
+    <input type="file" id="fileInput" accept=".txt" style="display: none;" />
+
+    <div id="output"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
